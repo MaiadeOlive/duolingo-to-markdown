@@ -61,7 +61,7 @@ def update_readme(response):
                 "https://d35aaqx5ub95lt.cloudfront.net/vendor/b3ede3d53c932ee30d981064671c8032.svg"\
                 ><span>{lang[1]}</span></span></th><th><span><img src=\
                 "https://d35aaqx5ub95lt.cloudfront.net/images/profile/01ce3a817dd01842581c3d18debcbc46.svg"\
-                ><span >{lang[3]}</span></span></th></tr>"""
+                ><span >{lang[2]}</span></span></th></tr>"""
     if (readme[duolingo_line_index] == duolingo_line):
         sys.exit(0)
     else:
