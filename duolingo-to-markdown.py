@@ -21,7 +21,7 @@ def get_duloingo_info(response):
     num_language = int(os.getenv('DUOLINGO_LANGUAGE_LENGTH'))
     lang_list = [( language_list["language_string"],language_list["level"], language_list["points"] ) for language_list in response["languages"] if language_list["learning"] == True]
     lang_list = [lang for lang in lang_list[:num_language]]
-    lang_list.sort(key=lambda lang:lang[0], reverse= True)  # guessing here
+    lang_list.sort(key=lambda lang:lang[2], reverse= True)  # guessing here
     return lang_list
 
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     
