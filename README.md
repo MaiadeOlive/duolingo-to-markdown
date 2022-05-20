@@ -35,12 +35,12 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: duolingo to markdown
-        uses: diegoaichele/duolingo-to-markdown@duolingo
+        uses: Craftermath/duolingo-to-markdown@duolingo
         with:
           DUOLINGO_USERNAME: ${{ secrets.DUOLINGO_USERNAME }}
           DUOLINGO_PASSWORD: ${{ secrets.DUOLINGO_PASSWORD }}
-#         DUOLINGO_STREAK: true # Optional. Defaults is true. If you want to include your last streak on Duolingo.
-#         DUOLINGO_LANGUAGE_LENGTH: 2 # Optional. Defaults to 2. Language you want to show (are sort of higher experience to lower).
+          DUOLINGO_STREAK: true # Optional. Defaults is true. If you want to include your last streak on Duolingo.
+          DUOLINGO_LANGUAGE_LENGTH: 6 # Optional. Defaults to 2. Language you want to show (are sort of higher experience to lower).
       - name: commit changes
         continue-on-error: true
         run: |
