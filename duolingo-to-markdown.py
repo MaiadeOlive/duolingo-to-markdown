@@ -45,12 +45,12 @@ def update_readme(response):
     with open('README.md', 'r', encoding='utf-8') as file:
         readme = file.readlines()
     duolingo_line_index = readme.index('<!-- duolingo -->\n') + 1
-    duolingo_line = '<p align="center"><img src="https://d35aaqx5ub95lt.clo'
-                    'udfront.net/images/dc30aa15cf53a51f7b82e6f3b7e63c68.svg">'
-                    f'Duolingo username: <strong> {username} </strong> </br>'
+    duolingo_line = '<p align="center"><img src="https://d35aaqx5ub95lt.clo' +
+                    'udfront.net/images/dc30aa15cf53a51f7b82e6f3b7e63c68.svg">' +
+                    f'Duolingo username: <strong> {username} </strong> </br>' 
     if streak_str == 'true':
-        duolingo_line += f'Last Streak: <strong> {response["last_streak"]["length"]}'
-        '</strong> <img width="20.5px" height="15.5px" src="https://d35aaqx5ub95lt.'
+        duolingo_line += f'Last Streak: <strong> {response["last_streak"]["length"]}' +
+        '</strong> <img width="20.5px" height="15.5px" src="https://d35aaqx5ub95lt.' +
         'cloudfront.net/vendor/398e4298a3b39ce566050e5c041949ef.svg"></br>'
 
     lang_list = get_duloingo_info(response)
