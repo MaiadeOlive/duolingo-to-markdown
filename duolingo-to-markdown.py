@@ -57,9 +57,9 @@ def update_readme(response):
 
     duolingo_line += """<table align="center"><tr><th>Language</th><th>Level</th><th>Experience</th></tr>"""
     for lang in lang_list:
-        duolingo_line += f"""<tr><th>{lang[0]} </th><th><span><img src=\
+        duolingo_line += f"""<tr><th>{lang[0]} </th><th><span><img width="20.5px" height="15.5px" src=\
                 "https://d35aaqx5ub95lt.cloudfront.net/vendor/b3ede3d53c932ee30d981064671c8032.svg"\
-                ><span>{lang[1]}</span></span></th><th><span><img src=\
+                ><span>{lang[1]}</span></span></th><th><span><img width="20.5px" height="15.5px" src=\
                 "https://d35aaqx5ub95lt.cloudfront.net/images/profile/01ce3a817dd01842581c3d18debcbc46.svg"\
                 ><span >{lang[2]}</span></span></th></tr>"""
     if (readme[duolingo_line_index] == duolingo_line):
