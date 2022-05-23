@@ -57,5 +57,6 @@ jobs:
 ```          
 The cron job is scheduled to run once a day, but you can do it weekly changing  ```- cron: '1 1 * * *' ```. You can manually run the workflow to test the code, going to the Actions tab in your repository.
           
-## TODO:
- -  Feel free to open an issue or send a pull request for anything you believe would be useful.
+## About:   
+This is a copy with slighty modifications from [the original work here](https://github.com/diegoaichele/duolingo-to-markdown).
+
